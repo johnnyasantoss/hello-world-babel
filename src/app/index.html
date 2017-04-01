@@ -1,0 +1,15 @@
+<html ng-app="App" ng-strict-di>
+
+<head>
+    <title>Hello Angular</title>
+</head>
+
+<body ng-controller="AppController as vm">
+    <h1 ng-if="vm.carregando === 0">Hello, {{vm.user}}</h1>
+    <span ng-show="vm.carregando !== 0">Carregando...</span>
+    <br />
+    <button ng-click="vm.click()">Aperta em mim</button>
+</body>
+<script src="js/main.min.js"></script>
+
+</html>
